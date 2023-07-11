@@ -10,9 +10,11 @@ function App() {
    <div>
      <BrowserRouter>
          <HeaderComponent />
-       <Routes>
-         <Route path="/" element={ListBoardComponent} />
-       </Routes>
+         <div className="container">
+             <Routes>
+                 <Route path="/" element={<ListBoardComponent />} />
+             </Routes>
+         </div>
          <FooterComponent />
      </BrowserRouter>
    </div>
